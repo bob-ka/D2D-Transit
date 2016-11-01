@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AKSideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-D2D Transit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVGKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9341A4EA2E1211609736A33B1A69EBC7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C47E961D975E5652EEB1AC68BDB922B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7273A8945AF5B18D89B9A0AA820AD74</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F824043C117369D345CF0D82810F072C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

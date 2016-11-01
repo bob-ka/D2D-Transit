@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F4AA78B1DC3B425000BDC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA78A1DC3B425000BDC0A /* AppDelegate.swift */; };
+		0F4AA78D1DC3B425000BDC0A /* RoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA78C1DC3B425000BDC0A /* RoutesViewController.swift */; };
+		0F4AA7901DC3B425000BDC0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA78E1DC3B425000BDC0A /* Main.storyboard */; };
+		0F4AA7921DC3B425000BDC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA7911DC3B425000BDC0A /* Assets.xcassets */; };
+		0F4AA7951DC3B425000BDC0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA7931DC3B425000BDC0A /* LaunchScreen.storyboard */; };
+		0F4AA7A01DC3B425000BDC0A /* D2D_TransitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA79F1DC3B425000BDC0A /* D2D_TransitTests.swift */; };
+		0F4AA7AB1DC3B425000BDC0A /* D2D_TransitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA7AA1DC3B425000BDC0A /* D2D_TransitUITests.swift */; };
+		0F4AA7BA1DC3BEA7000BDC0A /* RoutesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F4AA7B91DC3BEA7000BDC0A /* RoutesData.json */; };
+		0F4AA7BE1DC3C023000BDC0A /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA7BD1DC3C023000BDC0A /* Route.swift */; };
+		0F4AA7C01DC3C03F000BDC0A /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA7BF1DC3C03F000BDC0A /* Segment.swift */; };
+		0F4AA7C21DC3C077000BDC0A /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA7C11DC3C077000BDC0A /* Stop.swift */; };
+		0F4AA7C41DC3C0E5000BDC0A /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA7C31DC3C0E5000BDC0A /* Provider.swift */; };
+		0F4AA7C61DC3D844000BDC0A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4AA7C51DC3D844000BDC0A /* DataManager.swift */; };
+		0FD52B9D1DC4B053008122BF /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52B9C1DC4B053008122BF /* RootViewController.swift */; };
+		0FD52BA21DC4CF4F008122BF /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52BA11DC4CF4F008122BF /* SideMenuViewController.swift */; };
+		0FD52BA51DC4D372008122BF /* RouteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52BA41DC4D372008122BF /* RouteTableViewCell.swift */; };
+		0FD52BA91DC50F16008122BF /* BigRouteOriginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52BA81DC50F16008122BF /* BigRouteOriginTableViewCell.swift */; };
+		0FD52BAB1DC50F30008122BF /* SmallRouteOriginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52BAA1DC50F30008122BF /* SmallRouteOriginTableViewCell.swift */; };
+		0FD52BAD1DC50F51008122BF /* RouteStopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52BAC1DC50F51008122BF /* RouteStopTableViewCell.swift */; };
+		0FD52BB11DC50F7D008122BF /* RouteDestinationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52BB01DC50F7D008122BF /* RouteDestinationTableViewCell.swift */; };
+		0FD52BB31DC50FB0008122BF /* RouteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52BB21DC50FB0008122BF /* RouteDetailViewController.swift */; };
+		0FD52BB51DC51F43008122BF /* RouteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52BB41DC51F43008122BF /* RouteDetail.swift */; };
+		0FD52BB81DC55330008122BF /* ProvidersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52BB71DC55330008122BF /* ProvidersTableViewController.swift */; };
+		0FD52BBB1DC56848008122BF /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD52BBA1DC56848008122BF /* FavoritesTableViewController.swift */; };
+		EFB43B303045CBEEF3722F60 /* Pods_D2D_Transit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6694F9BBD623D842AC73ED06 /* Pods_D2D_Transit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F4AA79C1DC3B425000BDC0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F4AA77F1DC3B424000BDC0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F4AA7861DC3B424000BDC0A;
+			remoteInfo = "D2D Transit";
+		};
+		0F4AA7A71DC3B425000BDC0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F4AA77F1DC3B424000BDC0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F4AA7861DC3B424000BDC0A;
+			remoteInfo = "D2D Transit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F4AA7871DC3B425000BDC0A /* D2D Transit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D2D Transit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F4AA78A1DC3B425000BDC0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F4AA78C1DC3B425000BDC0A /* RoutesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesViewController.swift; sourceTree = "<group>"; };
+		0F4AA78F1DC3B425000BDC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F4AA7911DC3B425000BDC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F4AA7941DC3B425000BDC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F4AA7961DC3B425000BDC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4AA79B1DC3B425000BDC0A /* D2D TransitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "D2D TransitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F4AA79F1DC3B425000BDC0A /* D2D_TransitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D2D_TransitTests.swift; sourceTree = "<group>"; };
+		0F4AA7A11DC3B425000BDC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4AA7A61DC3B425000BDC0A /* D2D TransitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "D2D TransitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F4AA7AA1DC3B425000BDC0A /* D2D_TransitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D2D_TransitUITests.swift; sourceTree = "<group>"; };
+		0F4AA7AC1DC3B425000BDC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4AA7B91DC3BEA7000BDC0A /* RoutesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RoutesData.json; sourceTree = "<group>"; };
+		0F4AA7BD1DC3C023000BDC0A /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Route.swift; path = Model/Route.swift; sourceTree = "<group>"; };
+		0F4AA7BF1DC3C03F000BDC0A /* Segment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Segment.swift; path = Model/Segment.swift; sourceTree = "<group>"; };
+		0F4AA7C11DC3C077000BDC0A /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stop.swift; path = Model/Stop.swift; sourceTree = "<group>"; };
+		0F4AA7C31DC3C0E5000BDC0A /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Provider.swift; path = Model/Provider.swift; sourceTree = "<group>"; };
+		0F4AA7C51DC3D844000BDC0A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = DataManager/DataManager.swift; sourceTree = "<group>"; };
+		0FD52B9B1DC48152008122BF /* ObjCBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridgingHeader.h; sourceTree = "<group>"; };
+		0FD52B9C1DC4B053008122BF /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		0FD52BA11DC4CF4F008122BF /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuViewController.swift; path = SideMenu/SideMenuViewController.swift; sourceTree = "<group>"; };
+		0FD52BA41DC4D372008122BF /* RouteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteTableViewCell.swift; path = "Route Cells/RouteTableViewCell.swift"; sourceTree = "<group>"; };
+		0FD52BA81DC50F16008122BF /* BigRouteOriginTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BigRouteOriginTableViewCell.swift; path = "Route Detail/Route Detail Cells/BigRouteOriginTableViewCell.swift"; sourceTree = "<group>"; };
+		0FD52BAA1DC50F30008122BF /* SmallRouteOriginTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmallRouteOriginTableViewCell.swift; path = "Route Detail/Route Detail Cells/SmallRouteOriginTableViewCell.swift"; sourceTree = "<group>"; };
+		0FD52BAC1DC50F51008122BF /* RouteStopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteStopTableViewCell.swift; path = "Route Detail/Route Detail Cells/RouteStopTableViewCell.swift"; sourceTree = "<group>"; };
+		0FD52BB01DC50F7D008122BF /* RouteDestinationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteDestinationTableViewCell.swift; path = "Route Detail/Route Detail Cells/RouteDestinationTableViewCell.swift"; sourceTree = "<group>"; };
+		0FD52BB21DC50FB0008122BF /* RouteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteDetailViewController.swift; path = "Route Detail/RouteDetailViewController.swift"; sourceTree = "<group>"; };
+		0FD52BB41DC51F43008122BF /* RouteDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteDetail.swift; path = Model/RouteDetail.swift; sourceTree = "<group>"; };
+		0FD52BB71DC55330008122BF /* ProvidersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProvidersTableViewController.swift; path = SideMenu/Providers/ProvidersTableViewController.swift; sourceTree = "<group>"; };
+		0FD52BBA1DC56848008122BF /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FavoritesTableViewController.swift; path = SideMenu/Favorites/FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		58C36D3089D68FCC1D7D8CEC /* Pods-D2D Transit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D2D Transit.release.xcconfig"; path = "Pods/Target Support Files/Pods-D2D Transit/Pods-D2D Transit.release.xcconfig"; sourceTree = "<group>"; };
+		6694F9BBD623D842AC73ED06 /* Pods_D2D_Transit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_D2D_Transit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B055998AD6F979DF3BEC8F /* Pods-D2D Transit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D2D Transit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-D2D Transit/Pods-D2D Transit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F4AA7841DC3B424000BDC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB43B303045CBEEF3722F60 /* Pods_D2D_Transit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F4AA7981DC3B425000BDC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F4AA7A31DC3B425000BDC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F4AA77E1DC3B424000BDC0A = {
+			isa = PBXGroup;
+			children = (
+				0F4AA7891DC3B425000BDC0A /* D2D Transit */,
+				0F4AA79E1DC3B425000BDC0A /* D2D TransitTests */,
+				0F4AA7A91DC3B425000BDC0A /* D2D TransitUITests */,
+				0F4AA7881DC3B425000BDC0A /* Products */,
+				C2B63C29E030F1673F0B9D12 /* Pods */,
+				A30FC34F76174B3F4F9ED846 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0F4AA7881DC3B425000BDC0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F4AA7871DC3B425000BDC0A /* D2D Transit.app */,
+				0F4AA79B1DC3B425000BDC0A /* D2D TransitTests.xctest */,
+				0F4AA7A61DC3B425000BDC0A /* D2D TransitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F4AA7891DC3B425000BDC0A /* D2D Transit */ = {
+			isa = PBXGroup;
+			children = (
+				0F4AA7BC1DC3BFAA000BDC0A /* DataManager */,
+				0F4AA7BB1DC3BF94000BDC0A /* Model */,
+				0F4AA78A1DC3B425000BDC0A /* AppDelegate.swift */,
+				0FD52B9C1DC4B053008122BF /* RootViewController.swift */,
+				0FD52BA31DC4D323008122BF /* Route Cells */,
+				0F4AA78C1DC3B425000BDC0A /* RoutesViewController.swift */,
+				0FD52BA61DC50DE8008122BF /* Route Detail */,
+				0FD52B9E1DC4C83D008122BF /* SideMenu */,
+				0F4AA78E1DC3B425000BDC0A /* Main.storyboard */,
+				0F4AA7911DC3B425000BDC0A /* Assets.xcassets */,
+				0F4AA7931DC3B425000BDC0A /* LaunchScreen.storyboard */,
+				0F4AA7B81DC3BD64000BDC0A /* RoutesData */,
+				0F4AA7961DC3B425000BDC0A /* Info.plist */,
+				0FD52B9B1DC48152008122BF /* ObjCBridgingHeader.h */,
+			);
+			path = "D2D Transit";
+			sourceTree = "<group>";
+		};
+		0F4AA79E1DC3B425000BDC0A /* D2D TransitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F4AA79F1DC3B425000BDC0A /* D2D_TransitTests.swift */,
+				0F4AA7A11DC3B425000BDC0A /* Info.plist */,
+			);
+			path = "D2D TransitTests";
+			sourceTree = "<group>";
+		};
+		0F4AA7A91DC3B425000BDC0A /* D2D TransitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0F4AA7AA1DC3B425000BDC0A /* D2D_TransitUITests.swift */,
+				0F4AA7AC1DC3B425000BDC0A /* Info.plist */,
+			);
+			path = "D2D TransitUITests";
+			sourceTree = "<group>";
+		};
+		0F4AA7B81DC3BD64000BDC0A /* RoutesData */ = {
+			isa = PBXGroup;
+			children = (
+				0F4AA7B91DC3BEA7000BDC0A /* RoutesData.json */,
+			);
+			name = RoutesData;
+			path = "Routes Data";
+			sourceTree = "<group>";
+		};
+		0F4AA7BB1DC3BF94000BDC0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F4AA7BD1DC3C023000BDC0A /* Route.swift */,
+				0F4AA7BF1DC3C03F000BDC0A /* Segment.swift */,
+				0F4AA7C11DC3C077000BDC0A /* Stop.swift */,
+				0F4AA7C31DC3C0E5000BDC0A /* Provider.swift */,
+				0FD52BB41DC51F43008122BF /* RouteDetail.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0F4AA7BC1DC3BFAA000BDC0A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0F4AA7C51DC3D844000BDC0A /* DataManager.swift */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		0FD52B9E1DC4C83D008122BF /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0FD52BA11DC4CF4F008122BF /* SideMenuViewController.swift */,
+				0FD52BB91DC56267008122BF /* Favorites */,
+				0FD52BB61DC552D9008122BF /* Providers */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		0FD52BA31DC4D323008122BF /* Route Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0FD52BA41DC4D372008122BF /* RouteTableViewCell.swift */,
+			);
+			name = "Route Cells";
+			sourceTree = "<group>";
+		};
+		0FD52BA61DC50DE8008122BF /* Route Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0FD52BA71DC50E59008122BF /* Route Detail Cells */,
+				0FD52BB21DC50FB0008122BF /* RouteDetailViewController.swift */,
+			);
+			name = "Route Detail";
+			sourceTree = "<group>";
+		};
+		0FD52BA71DC50E59008122BF /* Route Detail Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0FD52BA81DC50F16008122BF /* BigRouteOriginTableViewCell.swift */,
+				0FD52BAA1DC50F30008122BF /* SmallRouteOriginTableViewCell.swift */,
+				0FD52BAC1DC50F51008122BF /* RouteStopTableViewCell.swift */,
+				0FD52BB01DC50F7D008122BF /* RouteDestinationTableViewCell.swift */,
+			);
+			name = "Route Detail Cells";
+			sourceTree = "<group>";
+		};
+		0FD52BB61DC552D9008122BF /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				0FD52BB71DC55330008122BF /* ProvidersTableViewController.swift */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		0FD52BB91DC56267008122BF /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				0FD52BBA1DC56848008122BF /* FavoritesTableViewController.swift */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		A30FC34F76174B3F4F9ED846 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6694F9BBD623D842AC73ED06 /* Pods_D2D_Transit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2B63C29E030F1673F0B9D12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9B055998AD6F979DF3BEC8F /* Pods-D2D Transit.debug.xcconfig */,
+				58C36D3089D68FCC1D7D8CEC /* Pods-D2D Transit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F4AA7861DC3B424000BDC0A /* D2D Transit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F4AA7AF1DC3B425000BDC0A /* Build configuration list for PBXNativeTarget "D2D Transit" */;
+			buildPhases = (
+				55B7A48B2A5B6D6C83338FCF /* Check Pods Manifest.lock */,
+				0F4AA7831DC3B424000BDC0A /* Sources */,
+				0F4AA7841DC3B424000BDC0A /* Frameworks */,
+				0F4AA7851DC3B424000BDC0A /* Resources */,
+				9CA89C6D0256208E74A1C93F /* Embed Pods Frameworks */,
+				2537329A60E2E391A5F0CC50 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "D2D Transit";
+			productName = "D2D Transit";
+			productReference = 0F4AA7871DC3B425000BDC0A /* D2D Transit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0F4AA79A1DC3B425000BDC0A /* D2D TransitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F4AA7B21DC3B425000BDC0A /* Build configuration list for PBXNativeTarget "D2D TransitTests" */;
+			buildPhases = (
+				0F4AA7971DC3B425000BDC0A /* Sources */,
+				0F4AA7981DC3B425000BDC0A /* Frameworks */,
+				0F4AA7991DC3B425000BDC0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F4AA79D1DC3B425000BDC0A /* PBXTargetDependency */,
+			);
+			name = "D2D TransitTests";
+			productName = "D2D TransitTests";
+			productReference = 0F4AA79B1DC3B425000BDC0A /* D2D TransitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0F4AA7A51DC3B425000BDC0A /* D2D TransitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F4AA7B51DC3B425000BDC0A /* Build configuration list for PBXNativeTarget "D2D TransitUITests" */;
+			buildPhases = (
+				0F4AA7A21DC3B425000BDC0A /* Sources */,
+				0F4AA7A31DC3B425000BDC0A /* Frameworks */,
+				0F4AA7A41DC3B425000BDC0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F4AA7A81DC3B425000BDC0A /* PBXTargetDependency */,
+			);
+			name = "D2D TransitUITests";
+			productName = "D2D TransitUITests";
+			productReference = 0F4AA7A61DC3B425000BDC0A /* D2D TransitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F4AA77F1DC3B424000BDC0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Ibrahim K";
+				TargetAttributes = {
+					0F4AA7861DC3B424000BDC0A = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					0F4AA79A1DC3B425000BDC0A = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0F4AA7861DC3B424000BDC0A;
+					};
+					0F4AA7A51DC3B425000BDC0A = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0F4AA7861DC3B424000BDC0A;
+					};
+				};
+			};
+			buildConfigurationList = 0F4AA7821DC3B424000BDC0A /* Build configuration list for PBXProject "D2D Transit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F4AA77E1DC3B424000BDC0A;
+			productRefGroup = 0F4AA7881DC3B425000BDC0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F4AA7861DC3B424000BDC0A /* D2D Transit */,
+				0F4AA79A1DC3B425000BDC0A /* D2D TransitTests */,
+				0F4AA7A51DC3B425000BDC0A /* D2D TransitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F4AA7851DC3B424000BDC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4AA7951DC3B425000BDC0A /* LaunchScreen.storyboard in Resources */,
+				0F4AA7921DC3B425000BDC0A /* Assets.xcassets in Resources */,
+				0F4AA7901DC3B425000BDC0A /* Main.storyboard in Resources */,
+				0F4AA7BA1DC3BEA7000BDC0A /* RoutesData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F4AA7991DC3B425000BDC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F4AA7A41DC3B425000BDC0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2537329A60E2E391A5F0CC50 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-D2D Transit/Pods-D2D Transit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55B7A48B2A5B6D6C83338FCF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA89C6D0256208E74A1C93F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-D2D Transit/Pods-D2D Transit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F4AA7831DC3B424000BDC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4AA7BE1DC3C023000BDC0A /* Route.swift in Sources */,
+				0FD52BAB1DC50F30008122BF /* SmallRouteOriginTableViewCell.swift in Sources */,
+				0F4AA78D1DC3B425000BDC0A /* RoutesViewController.swift in Sources */,
+				0FD52BBB1DC56848008122BF /* FavoritesTableViewController.swift in Sources */,
+				0FD52BA91DC50F16008122BF /* BigRouteOriginTableViewCell.swift in Sources */,
+				0F4AA7C21DC3C077000BDC0A /* Stop.swift in Sources */,
+				0F4AA7C61DC3D844000BDC0A /* DataManager.swift in Sources */,
+				0F4AA78B1DC3B425000BDC0A /* AppDelegate.swift in Sources */,
+				0FD52BB31DC50FB0008122BF /* RouteDetailViewController.swift in Sources */,
+				0FD52BA51DC4D372008122BF /* RouteTableViewCell.swift in Sources */,
+				0FD52BB11DC50F7D008122BF /* RouteDestinationTableViewCell.swift in Sources */,
+				0F4AA7C41DC3C0E5000BDC0A /* Provider.swift in Sources */,
+				0FD52B9D1DC4B053008122BF /* RootViewController.swift in Sources */,
+				0FD52BAD1DC50F51008122BF /* RouteStopTableViewCell.swift in Sources */,
+				0FD52BB81DC55330008122BF /* ProvidersTableViewController.swift in Sources */,
+				0FD52BA21DC4CF4F008122BF /* SideMenuViewController.swift in Sources */,
+				0FD52BB51DC51F43008122BF /* RouteDetail.swift in Sources */,
+				0F4AA7C01DC3C03F000BDC0A /* Segment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F4AA7971DC3B425000BDC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4AA7A01DC3B425000BDC0A /* D2D_TransitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F4AA7A21DC3B425000BDC0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F4AA7AB1DC3B425000BDC0A /* D2D_TransitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F4AA79D1DC3B425000BDC0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F4AA7861DC3B424000BDC0A /* D2D Transit */;
+			targetProxy = 0F4AA79C1DC3B425000BDC0A /* PBXContainerItemProxy */;
+		};
+		0F4AA7A81DC3B425000BDC0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F4AA7861DC3B424000BDC0A /* D2D Transit */;
+			targetProxy = 0F4AA7A71DC3B425000BDC0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0F4AA78E1DC3B425000BDC0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F4AA78F1DC3B425000BDC0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0F4AA7931DC3B425000BDC0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F4AA7941DC3B425000BDC0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F4AA7AD1DC3B425000BDC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F4AA7AE1DC3B425000BDC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F4AA7B01DC3B425000BDC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B055998AD6F979DF3BEC8F /* Pods-D2D Transit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "D2D Transit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bobK.D2D-Transit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "D2D Transit/ObjCBridgingHeader.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0F4AA7B11DC3B425000BDC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58C36D3089D68FCC1D7D8CEC /* Pods-D2D Transit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "D2D Transit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bobK.D2D-Transit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "D2D Transit/ObjCBridgingHeader.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0F4AA7B31DC3B425000BDC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "D2D TransitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bobK.D2D-TransitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/D2D Transit.app/D2D Transit";
+			};
+			name = Debug;
+		};
+		0F4AA7B41DC3B425000BDC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "D2D TransitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bobK.D2D-TransitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/D2D Transit.app/D2D Transit";
+			};
+			name = Release;
+		};
+		0F4AA7B61DC3B425000BDC0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "D2D TransitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bobK.D2D-TransitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "D2D Transit";
+			};
+			name = Debug;
+		};
+		0F4AA7B71DC3B425000BDC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "D2D TransitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bobK.D2D-TransitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "D2D Transit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F4AA7821DC3B424000BDC0A /* Build configuration list for PBXProject "D2D Transit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F4AA7AD1DC3B425000BDC0A /* Debug */,
+				0F4AA7AE1DC3B425000BDC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F4AA7AF1DC3B425000BDC0A /* Build configuration list for PBXNativeTarget "D2D Transit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F4AA7B01DC3B425000BDC0A /* Debug */,
+				0F4AA7B11DC3B425000BDC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F4AA7B21DC3B425000BDC0A /* Build configuration list for PBXNativeTarget "D2D TransitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F4AA7B31DC3B425000BDC0A /* Debug */,
+				0F4AA7B41DC3B425000BDC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F4AA7B51DC3B425000BDC0A /* Build configuration list for PBXNativeTarget "D2D TransitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F4AA7B61DC3B425000BDC0A /* Debug */,
+				0F4AA7B71DC3B425000BDC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F4AA77F1DC3B424000BDC0A /* Project object */;
+}

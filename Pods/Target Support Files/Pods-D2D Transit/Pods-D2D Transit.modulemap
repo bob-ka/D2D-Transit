@@ -1,0 +1,6 @@
+framework module Pods_D2D_Transit {
+  umbrella header "Pods-D2D Transit-umbrella.h"
+
+  export *
+  module * { export * }
+}
