@@ -24,7 +24,7 @@ The Get Going Label or Time Remaining Label is  [Relax (> 20 minutes) - Get Goin
 The legend view shows the different transportation methods.
 
 RoutesDetailViewController:   
-It shows the route on the map
+It shows the route on the map   
 The ability to add the route to favourites.
 A tableView showing a route’s starting points, stops and destination.
 
